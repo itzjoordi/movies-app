@@ -8,11 +8,11 @@ class SearchForm extends Component{
     }
 
     handleButton = () => {
-        const url = `http://www.omdbapi.com/?apikey=8415a21f&s=${this.state.inputMovie}`;
+        const url = `http://www.omdbapi.com/?apikey=8415a21f&s=${this.state.inputMovie}&type=movie`;
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                this.props.onMoviesResult(data);   
+                this.props.getMoviesList(data);   
             });
     }
 

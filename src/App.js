@@ -18,7 +18,7 @@ class App extends Component{
         <div className="App">
           <Title>Looking for a Film?</Title>
           <div className='SearchForm-wrapper'>
-            <SearchForm onMoviesResult={this.handleMoviesResults}/>
+            <SearchForm getMoviesList={this.handleMoviesResults}/>
           </div>
           <Result data={this.state.moviesResults} />
         </div>

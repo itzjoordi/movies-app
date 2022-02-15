@@ -7,3 +7,19 @@
   display: flex;
   justify-content: center;
 }
+
+.warning {
+  color: red;
+}
+
+.Movie-List {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.Movie-Item {
+  margin-bottom: 20px;
+  width: 33%;
+}
